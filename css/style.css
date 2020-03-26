@@ -227,7 +227,9 @@ img {
 
 .hero {
 display: grid;
-grid-template-columns: 60% 40%;
+gap: .5em;
+width: 100%;
+grid-template-columns: 59% 40%;
 grid-template-areas:  "studies idioms"
                       "studies softskills"
                       "hobbies .";
