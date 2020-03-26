@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?wsupds');
+  src:  url('../fonts/icomoon.eot?wsupds#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wsupds') format('truetype'),
+    url('../fonts/icomoon.woff?wsupds') format('woff'),
+    url('../fonts/icomoon.svg?wsupds#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e900";
+}
+.icon-support:before {
+  content: "\e900";
+}
+.icon-newsletter:before {
+  content: "\e900";
+}
+.icon-letter:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e900";
+}
+.icon-envelop:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e900";
+}
+.icon-star-half:before {
+  content: "\e901";
+}
+.icon-rate:before {
+  content: "\e901";
+}
+.icon-star:before {
+  content: "\e901";
+}
+.icon-star-full:before {
+  content: "\e902";
+}
+.icon-rate1:before {
+  content: "\e902";
+}
+.icon-star1:before {
+  content: "\e902";
+}
+.icon-favorite:before {
+  content: "\e902";
+}
+.icon-bookmark:before {
+  content: "\e902";
+}
+.icon-star-empty:before {
+  content: "\e903";
+}
+.icon-rate2:before {
+  content: "\e903";
+}
+.icon-star2:before {
+  content: "\e903";
+}
+.icon-favorite1:before {
+  content: "\e903";
+}
+.icon-bookmark1:before {
+  content: "\e903";
+}
+.icon-location:before {
+  content: "\e904";
+}
+.icon-map-marker:before {
+  content: "\e904";
+}
+.icon-pin:before {
+  content: "\e904";
+}
+.icon-home:before {
+  content: "\e905";
+}
+.icon-house:before {
+  content: "\e905";
+}
+.icon-linkedin:before {
+  content: "\e906";
+}
+.icon-brand:before {
+  content: "\e906";
+}
+.icon-social1:before {
+  content: "\e906";
+}
+.icon-github:before {
+  content: "\e907";
+}
+.icon-brand1:before {
+  content: "\e907";
+}
+.icon-octacat:before {
+  content: "\e907";
+}
+.icon-social2:before {
+  content: "\e907";
+}
+.icon-whatsapp:before {
+  content: "\e908";
+}
+.icon-brand2:before {
+  content: "\e908";
+}
+.icon-social3:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e909";
+}
+.icon-brand3:before {
+  content: "\e909";
+}
+.icon-social4:before {
+  content: "\e909";
+}
+.icon-menu:before {
+  content: "\e90a";
+}
+.icon-options:before {
+  content: "\e90a";
+}
+.icon-hamburger:before {
+  content: "\e90a";
+}
+.icon-menu1:before {
+  content: "\e90b";
+}
+.icon-options1:before {
+  content: "\e90b";
+}
+.icon-hamburger1:before {
+  content: "\e90b";
+}
+
+
+html, body {
+  margin:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+header {
+  border-top: 1px solid black;
+  display: grid;
+  grid-template-columns: 20% 1fr 15%;
+  grid-template-rows: 170px;
+  grid-template-areas: "Portfolio About-Me Portail";
+}
+
+.portfolio{
+
+}
+.about-me {
+  grid-area: About-Me;
+  font-size: 1.8em;
+  color: rgba(20, 20, 20, .9);
+}
+
+header p {
+  margin:10px auto 0;
+}
+
+.name {
+  font-weight: 600;
+  text-align: center;
+}
+.about-me strong{
+  font-size: 1.1em;
+  font-weight: 900;
+}
+hr {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+.position{
+  text-align: center;
+  font-weight: 300;
+}
+.me {
+  max-width: 500px;
+  font-size: .7em;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20%;
+  grid-area: Portail;
+}
+
+
+footer{
+  border-top: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+i {
+  color: black;
+  padding: 5px 5px;
+}
+a {
+  padding: 5px 0px;
+  text-decoration: none;
+}
