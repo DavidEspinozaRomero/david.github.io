@@ -166,11 +166,14 @@ html, body {
   margin:0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: brown;
 }
 
 .container {
   max-width: 1000px;
   margin: 10px auto;
+  padding: 10px;
+  background-color: snow;
 }
 
 header {
@@ -202,7 +205,7 @@ header p {
   font-size: 1.1em;
   font-weight: 900;
 }
-hr {
+header hr {
   display: flex;
   width: 75%;
   margin: 0 auto;
@@ -220,6 +223,36 @@ img {
   height: 100%;
   border-bottom-left-radius: 20%;
   grid-area: Portail;
+}
+
+.hero {
+display: grid;
+grid-template-columns: 60% 40%;
+grid-template-areas:  "studies idioms"
+                      "studies softskills"
+                      "hobbies .";
+}
+.hero h1{
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  border:1px solid black;
+}
+
+.studies {
+  grid-area: studies;
+}
+.idioms{
+  grid-area: idioms;
+}
+.softskills{
+  grid-area: softskills;
+}
+/* .hardskills{
+  grid-area: hardskills;
+} */
+.hobbies{
+  grid-area: hobbies;
 }
 
 
