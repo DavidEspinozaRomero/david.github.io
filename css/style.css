@@ -168,12 +168,13 @@
   --backg-color: #148023;
   --bcverdemedio-color: #20CC37;
   --backhs-color: #29FF45;
-  --backcont-color: #75FF88;
+  --backcont-color: hsl(125, 17%, 97%);
   --headfoot-color: #3B8044;
 }
 
 /* ----------Shadow Box */
 :root {
+  --shadowbox-color: #75FF88;
 
 }
 /* ---------- Main Css */
@@ -191,9 +192,8 @@ html, body {
   padding: 10px;
   background-color: var(--backcont-color);
 }
-h1:hover {
-  text-shadow: 1px 1px 4px white;
-}
+.hero h1:hover {
+  text-shadow: 1px 1px 24px hsla(0, 0%, 0%, 1)}
 
 /* --------------Header start */
 
@@ -252,22 +252,28 @@ img {
 .hero {
 display: grid;
 gap: .5em;
-width: 100%;
+margin: auto;
+width: 95%;
 grid-template-columns: 59% 40%;
 grid-template-areas:  "studies idioms"
                       "studies softskills"
-                      "hobbies .";
+                      "hobbies hardskills";
 }
 .hero h1{
-  margin: 10px;
+  margin: 1em 10px 0px 0px;
   padding: 5px 10px;
   font-size: 1.5em;
   border:1px solid var(--headfoot-color);
   background-color: var(--backhs-color);
   box-shadow: 0px 0px 2px 2px var(--headfoot-color);
-  text-shadow: 0px 0px 2px 2px snow;
 }
-
+.hero p {
+  padding: 0px 10px;
+}
+.hero hr{
+  margin: auto 5px;
+  width: 90%;
+}
 .studies {
   grid-area: studies;
 }
@@ -277,9 +283,9 @@ grid-template-areas:  "studies idioms"
 .softskills{
   grid-area: softskills;
 }
-/* .hardskills{
+.hardskills{
   grid-area: hardskills;
-} */
+}
 .hobbies{
   grid-area: hobbies;
 }
@@ -300,5 +306,8 @@ a {
   text-decoration: none;
 }
 i:hover {
-  text-shadow: 0px 0px 4px white;
+  text-shadow: 0px 0px 4px var(--shadowbox-color);
+}
+a:hover {
+  text-decoration: underline;
 }
