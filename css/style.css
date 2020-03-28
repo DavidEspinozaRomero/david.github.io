@@ -1,3 +1,5 @@
+/* -----------Fonts */
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?wsupds');
@@ -160,21 +162,37 @@
 .icon-hamburger1:before {
   content: "\e90b";
 }
+/* ----------Colores */
 
+:root{
+  --backg-color: #148023;
+  --bcverdemedio-color: #20CC37;
+  --backhs-color: #29FF45;
+  --backcont-color: #75FF88;
+  --headfoot-color: #3B8044;
+}
+
+/* ----------Shadow Box */
+:root {
+
+}
+/* ---------- Main Css */
 
 html, body {
   margin:0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: brown;
+  background-color: var(--backg-color);
 }
 
 .container {
   max-width: 1000px;
   margin: 10px auto;
   padding: 10px;
-  background-color: snow;
+  background-color: var(--backcont-color);
 }
+
+/* --------------Header start */
 
 header {
   border-top: 1px solid black;
@@ -223,7 +241,10 @@ img {
   height: 100%;
   border-bottom-left-radius: 20%;
   grid-area: Portail;
+  box-shadow: -4px 4px 4px 4px var(--headfoot-color);
 }
+
+/* --------------- Hero start */
 
 .hero {
 display: grid;
@@ -235,10 +256,13 @@ grid-template-areas:  "studies idioms"
                       "hobbies .";
 }
 .hero h1{
-  margin: 0;
+  margin: 10px;
   padding: 5px 10px;
   font-size: 1.5em;
-  border:1px solid black;
+  border:1px solid var(--headfoot-color);
+  background-color: var(--backhs-color);
+  box-shadow: 0px 0px 2px 2px var(--headfoot-color);
+  text-shadow: 0px 0px 2px 2px snow;
 }
 
 .studies {
@@ -257,6 +281,7 @@ grid-template-areas:  "studies idioms"
   grid-area: hobbies;
 }
 
+/* ---------------- Footer start */
 
 footer{
   border-top: 1px solid black;
