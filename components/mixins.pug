@@ -1,0 +1,33 @@
+mixin menu(portfolio, aboutMe, contact)
+	ul#menu.menu
+		li.menu__list: a(class='menu__link' href=`${portfolio}.html`)=menuText[0]
+		li.menu__list: a(class='menu__link' href=`${aboutMe}.html`)=menuText[1]
+		li(class='menu__list'): a(class='menu__link' href=`${contact}.html`)=menuText[2]
+
+mixin box(img, page, code, info)
+	div.box
+		a.box__page-link(href=`https://${page}`) PAGE
+		a.box__code-link(href=`https://${code}`) CODE
+		img.box__img(src=`imgs/${img}`)(alt=`${img}`)
+		h3.box__description-title=info.title
+		p.box__description-text=info.description
+
+mixin studies(date, degree, institute, place)
+	div.study
+		small.study__date=date
+		br
+		span.study__degree=degree
+		br
+		strong.study__institute=institute
+		br
+		small.study__place=place
+		hr
+
+mixin idiom(idioma,img)
+	div.idiom
+		img.idiom__img(src=`${img}`, alt=`"idioma"${idioma}`)
+		p=idioma
+
+mixin program(nameIcon)
+	p.program: i(class=`icon-${nameIcon}`)
+

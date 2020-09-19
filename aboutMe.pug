@@ -1,0 +1,51 @@
+extend ./components/template.pug
+block content
+	main.resume.fadeInDown
+		section.about-me
+			img.about-me__picture(src="imgs/img.png" alt="foto personal")
+			p.about-me__description
+				small.about-me__charge FRONTEND WEB DEVELOPER 
+				|Soy autodidacta, proactivo y creativo.
+				//- br
+				|Me gusta trabajar en equipo,
+				|aprender nuevas tecnologías e investigar.
+		section.studies
+			h1.studies__title Estudios
+			+studies('10/07/2002 – 6/07/2010', 'Técnico en Comercio y Administración', 'Colegio Nacional “Picaihua”', 'Ambato - Ecuador')
+			+studies('2015 - 2016', 'Ing. Sistemas computacionales e Informáticos', 'Universidad Técnica de Ambato', 'Ambato - Ecuador')
+			+studies('2019 - 2020', 'Crecimiento Profesional, Desarrollo e Ingeniería, Ingles.', 'Platzi', 'Online')
+		section.hobbies
+			h1.hobbies__title Intereses
+			p.hobbies__content
+				strong Lectura:
+				|Tecnología, Apicultura, Programación. <br/>
+				strong Proyecto Personal: 
+				i “Bee’s Touch” 
+				|Empresa fomentada a la venta de productos de las colmenas de abejas y a realizar conciencia social sobre la importancia de las mismas. <br/>
+				|Videojuegos.
+		section.idioms
+			h1.idioms__title Idiomas
+			+idiom("Español","imgs/img.png")
+			+idiom("English","imgs/img.png")
+
+		section.hardskills
+			h1.hardskills__title Programas
+			+program("html5")
+			+program("css3")
+			+program("javascript")
+			+program("github")
+			//- +program("pug")
+
+		section.softskills
+			h1.softskills__title Habilidades
+			p
+				|Liderazgo
+				br
+				|Resiliencia
+				br
+				|Organizacion
+				br
+				|Sistemas de Diseño
+				br
+				|Comunicación Verbal/Escrita
+

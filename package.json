@@ -1,0 +1,23 @@
+{
+  "name": "pagina-personal",
+  "version": "1.0.0",
+  "description": "Portafolio personal, CV + extras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidEspinozaRomero/DavidEspinozaRomero.github.io.git"
+  },
+  "keywords": [
+    "CV",
+    "Portfolio"
+  ],
+  "author": "David Espinoza Romero <deerhou@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidEspinozaRomero/DavidEspinozaRomero.github.io/issues"
+  },
+  "homepage": "https://github.com/DavidEspinozaRomero/DavidEspinozaRomero.github.io#readme"
+}

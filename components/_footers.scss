@@ -1,0 +1,17 @@
+/* ---------------- Footer start */
+.footer--basic {
+	display: grid;
+	padding: 0 $spacing*.5;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 40px;
+	i {
+		color: $color-primary;
+		font-size: 1.5rem;
+		line-height: 30px;
+		padding-left: 10px;
+	}
+	a {
+		text-decoration: none;
+	}
+}	
+

@@ -1,0 +1,50 @@
+/* MENU - START */
+.menu-container {
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: end;
+}
+
+.menu {
+  display: inline-flex;
+  width: auto;
+  margin: 10px auto;
+  padding: 0;
+  background-color: initial;
+  border: initial;
+  border-radius: initial;
+  position: initial;
+}
+.menu li + li {
+  border-top: initial;
+}
+.menu__list {
+  padding-right: 20px;
+  letter-spacing: 0.1rem;
+}
+.menu__list a:hover {
+  color: #6666ff;
+  border-bottom: 3px solid blue;
+  transition: ease 300ms;
+}
+
+.box--container {
+  justify-content: space-around;
+}
+
+.about-me {
+  display: flex;
+  grid-area: about;
+}
+.about-me__picture {
+  display: inline-block;
+  height: 200px;
+}
+
+.footer--basic {
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer--basic i {
+  font-size: 1.7rem;
+}

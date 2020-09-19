@@ -1,0 +1,16 @@
+.box--container{
+  justify-content: space-around;
+}
+
+// --- Index - FIN
+
+// /* HEADER - About me */
+
+.about-me {
+	display: flex;
+	grid-area: about;
+	&__picture{
+		display: inline-block;
+		height: 200px;
+	} 
+}

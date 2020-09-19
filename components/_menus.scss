@@ -1,0 +1,47 @@
+/* MENU - START */
+.icon-menu {
+  padding: 0;
+  margin: $spacing*.5;
+  position: sticky;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 3rem;
+  border-radius: 50%;
+  top: $spacing;
+  left: $spacing;
+}
+.menu{
+  display: none;
+  width: 100px;
+  padding: 0 $spacing*.5;
+  list-style-type: none;
+  background-color: rgba($color-secondary, .3);
+  border:1px solid rgba($color-primary , .5);
+  border-radius: $spacing;
+  position: absolute;
+  top: 0;
+  left: $spacing*2.5;
+  // z-index: 1000;
+  li + li {
+    border-top: 1px solid rgba($color-primary, .5);
+  }
+  &__list{
+    width: auto;
+    height: 40px;
+    font-weight: 600;
+    line-height: 25px;
+    a{
+      font-size: 1.5rem;
+      text-align: center;
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}
+.menu-movile-active {
+  display: block;
+}
+
+// --- MENU - FIN 

@@ -1,0 +1,27 @@
+// /* HEADER - INDEX */
+
+.name{
+  font-family: $font-primary;
+  display: inline-block;
+  height: auto;
+  width: 100vw;
+  text-align: center;
+  &__first{
+		margin: $spacing*.5 auto ;
+    color: $color-primary;
+    width: 100%;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: 0.075em;
+  }
+  hr{
+    margin: 0 auto;
+    width: 9em;
+    height: 5px;
+    background-color: $color-variation;
+    border: none;
+    box-shadow: 0px 0px 20px 0px $color-primary;
+  }
+}
+
+// /* HEADER - INDEX END*/
