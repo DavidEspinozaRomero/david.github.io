@@ -4,6 +4,7 @@
   "description": "Portafolio personal, CV + extras",
   "main": "index.js",
   "scripts": {
+    "build": "webpack ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/DavidEspinozaRomero/DavidEspinozaRomero.github.io/issues"
   },
-  "homepage": "https://github.com/DavidEspinozaRomero/DavidEspinozaRomero.github.io#readme"
+  "homepage": "https://github.com/DavidEspinozaRomero/DavidEspinozaRomero.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.29.0",
+    "webpack": "^5.5.0"
+  },
+  "dependencies": {}
 }
