@@ -1,7 +1,2 @@
-.pug
-.scss
-.sass
-.ts
-.json
-.config
+src
 node_modules

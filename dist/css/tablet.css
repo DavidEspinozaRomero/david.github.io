@@ -17,9 +17,6 @@
 }
 
 .about-me {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   width: auto;
   display: flex;
   text-align: center;
@@ -35,9 +32,6 @@
 }
 
 .studies, .softskills, .hardskills, .idioms, .hobbies {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
   grid-area: studies;
 }
 .studies__title, .softskills__title, .hardskills__title, .idioms__title, .hobbies__title {
@@ -49,23 +43,15 @@
 }
 
 .hobbies {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
   grid-area: hobbies;
 }
 .idioms {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
   grid-area: idioms;
 }
 .hardskills {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
   grid-area: hardskills;
 }
 .softskills {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
   grid-area: softskills;
 }
 /* --- resume end */

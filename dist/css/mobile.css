@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 0.625rem;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(26, 26, 26, 0.95);
+  background: linear-gradient(110.72deg, #0A0A6D 11.87%, #7625A7 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 
