@@ -4,75 +4,81 @@
     <title>Deerhou</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Roboto&amp;family=Roboto+Slab:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/fonts.css"/>
+    <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/mobile.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 600px)" href="./css/animations.css"/>
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 600px)"/>
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)"/>
+    <link rel="stylesheet" href="./css/about.css"/>
+    <link rel="stylesheet" href="./css/tablet-about.css" media="screen and (min-width: 600px)"/>
   </head>
   <body>
-    <header class="name">
-      <h1 class="name__first">David Espinoza
-        <hr/>
-      </h1>
+    <header class="enterprise"><img class="enterprise__logo" src="./assets/icons/deerhou-logo.svg" alt="logo"/>
+      <h1 class="enterprise__name">Deerhou</h1>
     </header>
-    <menu class="menu-container icon-menu">
+    <menu class="menu-index">
         <ul class="menu" id="menu">
-          <li class="menu__list"><a class="menu__link" href="index.html">Portfolio</a></li>
-          <li class="menu__list"><a class="menu__link" href="aboutMe.html">About me</a></li>
-          <li class="menu__list"><a class="menu__link" href="projects.html">Contact</a></li>
+          <li class="menu__list"><a class="menu__link icon-home_work" href="./index.html"><span class="menu-text">Home</span></a></li>
+          <li class="menu__list"><a class="menu__link icon-opsgenie" href="./aboutMe.html"><span class="menu-text">About me</span></a></li>
+          <li class="menu__list"><a class="menu__link icon-folder-open" href="./projects.html"><span class="menu-text">Projects</span></a></li>
+          <li class="menu__list"><a class="menu__link icon-paper-plane" href="./contact.html"><span class="menu__text">Contact</span></a></li>
         </ul>
     </menu>
-    <main class="resume fadeInDown">
-      <section class="about-me"><img class="about-me__picture" src="imgs/img.png" alt="foto personal"/>
-        <p class="about-me__description"><small class="about-me__charge">FRONTEND WEB DEVELOPER</small>Soy autodidacta, proactivo y creativo.
-          Me gusta trabajar en equipo,
-          aprender nuevas tecnologías e investigar.
-        </p>
-      </section>
-      <section class="studies">
-        <h1 class="studies__title">Estudios</h1>
-          <div class="study"><small class="study__date">10/07/2002 – 6/07/2010</small><br/><span class="study__degree">Técnico en Comercio y Administración</span><br/><strong class="study__institute">Colegio Nacional “Picaihua”</strong><br/><small class="study__place">Ambato - Ecuador</small>
-            <hr/>
-          </div>
-          <div class="study"><small class="study__date">2015 - 2016</small><br/><span class="study__degree">Ing. Sistemas computacionales e Informáticos</span><br/><strong class="study__institute">Universidad Técnica de Ambato</strong><br/><small class="study__place">Ambato - Ecuador</small>
-            <hr/>
-          </div>
-          <div class="study"><small class="study__date">2019 - 2020</small><br/><span class="study__degree">Crecimiento Profesional, Desarrollo e Ingeniería, Ingles.</span><br/><strong class="study__institute">Platzi</strong><br/><small class="study__place">Online</small>
-            <hr/>
-          </div>
+    <main class="resume">
+      <section class="about-me"><img class="about-me__portrait" src="../dist/imgs/david.jpg" alt="foto personal"/>
+        <div>
+          <h2 class="about-me__name">David Espinoza Romero</h2>
+          <h1 class="about-me__charge">FRONTEND WEB DEVELOPER</h1>
+          <p class="about-me__description">Se puede aprender cualquier tema que se desee con esfuerzo y perseverancia.
+            <wbr/>Gracias a la gente que comparte sus conocimientos por medio de internet.
+            <wbr/>Soy autodidacta, proactivo y creativo.
+            Me gusta trabajar en equipo,
+            aprender nuevas tecnologías e investigar.
+          </p>
+        </div>
       </section>
       <section class="hobbies">
-        <h1 class="hobbies__title">Intereses</h1>
-        <p class="hobbies__content"><strong>Lectura:</strong>Tecnología, Apicultura, Programación. <br/><strong>Proyecto Personal:</strong><i>“Bee’s Touch”</i>Empresa fomentada a la venta de productos de las colmenas de abejas y a realizar conciencia social sobre la importancia de las mismas. <br/>
-          Videojuegos.
-        </p>
+        <h2 class="hobbies__title">Intereses</h2>
+        <p class="hobbies__content">Siempre me ha interesado el saber como funcionan las cosas y el porque de las mismas.<br/></p>
+        <p class="hobbies__content">Los avances de tecnología siempre me han imprecionado, cuando era joven no sabia como se conseguia o a subes pensaba que no era la gran cosa, ahora se que el trabajo en equipo marca la diferencia.<br/></p>
+        <p class="hobbies__content">Uno de mis hobbies es la apicultura me encanta ya que no es necesario invertir mucho tiempo y es gratificante el trabajan con las abejas.<br/></p>
+        <p class="hobbies__content">La programación me llamo la atencion desde que mi hermano mayor empezo a aprender en su instituto, al pasar un par de años cuando me enseñaron vi que se me daba bien a diferencia de mis compañeros de instituto aun que tiene su complejidad te habre la mente en varios sentidos.<br/></p>
+        <p class="hobbies__content">Agradezco a los videojuegos varias cosas entre las mas importantes el a ver apredido ingles basico y al salir el modo multiplayer online conocer gente de todo el mundo y ampliar mi vision.<br/><br/></p>
+        <p class="hobbies__content"><strong>Proyecto Personal:</strong><i>“Bee’s Touch” </i>Empresa fomentada a la venta de productos de las colmenas de abejas y a realizar conciencia social sobre la importancia de las mismas.</p>
       </section>
       <section class="idioms">
         <h1 class="idioms__title">Idiomas</h1>
-          <div class="idiom"><img class="idiom__img" src="imgs/img.png" alt="&quot;idioma&quot;Español"/>
-            <p>Español</p>
-          </div>
-          <div class="idiom"><img class="idiom__img" src="imgs/img.png" alt="&quot;idioma&quot;English"/>
+          <div class="idiom"><img class="idiom__img" src="./assets/icons/usa.svg" alt="&quot;idioma&quot;English"/>
             <p>English</p>
+          </div>
+          <div class="idiom"><img class="idiom__img" src="./assets/icons/ecuador.svg" alt="&quot;idioma&quot;Español"/>
+            <p>Español</p>
           </div>
       </section>
       <section class="hardskills">
-        <h1 class="hardskills__title">Programas</h1>
-          <p class="program"><i class="icon-html5"></i></p>
-          <p class="program"><i class="icon-css3"></i></p>
-          <p class="program"><i class="icon-javascript"></i></p>
-          <p class="program"><i class="icon-github"></i></p>
+        <h2 class="hardskills__title">Conocimientos</h2>
+          <p class="program"><i class="icon-html5"><span>Html5</span></i></p>
+          <p class="program"><i class="icon-css3"><span>Css3</span></i></p>
+          <p class="program"><i class="icon-javascript"><span>Javascript</span></i></p>
+          <p class="program"><i class="icon-sass"><span>Sass</span></i></p>
+          <p class="program"><i class="icon-git"><span>Git</span></i></p>
+          <p class="program"><i class="icon-node-dot-js"><span>Nodejs</span></i></p>
+          <p class="program"><i class="icon-mongodb"><span>mongoDB</span></i></p>
+          <p class="program"><i class="icon-webpack"><span>Webpack</span></i></p>
+          <p class="program"><i class="icon-wordpress"><span>Wordpress</span></i></p>
       </section>
-      <section class="softskills">
-        <h1 class="softskills__title">Habilidades</h1>
-        <p>Liderazgo<br/>Resiliencia<br/>Organizacion<br/>Sistemas de Diseño<br/>Comunicación Verbal/Escrita</p>
+      <section class="hardskills">
+        <h2 class="hardskills__title">Programas</h2>
+          <p class="program"><i class="icon-visualstudiocode"><span>VisualStudioCode</span></i></p>
+          <p class="program"><i class="icon-adobexd"><span>AdobeXD</span></i></p>
+          <p class="program"><i class="icon-figma"><span>Figma</span></i></p>
+          <p class="program"><i class="icon-github"><span>Github</span></i></p>
+          <p class="program"><i class="icon-console"><span>Terminal</span></i></p>
+          <p class="program"><i class="icon-postman"><span>Postman</span></i></p>
       </section>
     </main>
-    <footer class="footer footer--basic fadeInUp"><a href="https://facebook.com/Davesro" target="_blank"><i class="icon-facebook link"> Facebook</i></a><a href="https://bit.ly/2vW8Hpe" target="_blank"><i class="icon-linkedin link"> Linkedin</i></a><a href="https://github.com/DavidEspinozaRomero" target="_blank"><i class="icon-github"> Github</i></a><i class="icon-whatsapp"> Teléfono</i><i class="icon-gmail"> @gmail.com</i><i class="icon-location"> Tungurahua - Ecuador</i><i class="icon-home"> Dirección</i></footer>
-    <script src="js/mobile.js"></script>
-    <script src="js/desktop.js" media="screen and (min-width: 1200px)"></script>
+    <footer class="social-media"><a href="https://www.linkedin.com/in/david-emanuel-espinoza-romero-deerhou/" target="_blank"><i class="icon-linkedin"></i></a><a href="https://github.com/DavidEspinozaRomero" target="_blank"><i class="icon-github"></i></a><a href="https://facebook.com/Davesro" target="_blank"><i class="icon-facebook"></i></a></footer>
   </body>
 </html>

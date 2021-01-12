@@ -1,50 +1,42 @@
-/* MENU - START */
-.menu-container {
-  max-width: 95vw;
-  margin: 0 auto;
-  padding: 0;
-  text-align: end;
+body {
+  display: grid;
+  background-image: linear-gradient(90deg, black 23rem, blue 23rem, blue);
+  grid-template-columns: 23rem 1fr;
+  grid-template-areas: "aside main";
 }
-
-.menu {
-  display: inline-flex;
-  width: auto;
-  margin: 10px auto;
-  padding: 0;
-  background-color: initial;
+body header, body .social-media, body .menu-index {
+  grid-area: aside;
+  position: absolute;
+}
+body .menu-index {
+  background-color: transparent;
   border: initial;
-  border-radius: initial;
-  position: initial;
+  width: 23rem;
+  top: calc(100vh/4);
+  bottom: 10rem;
 }
-.menu li + li {
-  border-top: initial;
+body .social-media {
+  padding: 20px;
+  bottom: 0;
 }
-.menu__list {
-  padding-right: 20px;
-  letter-spacing: 0.1rem;
+body main {
+  grid-area: main;
 }
-.menu__list a:hover {
-  color: #6666ff;
-  border-bottom: 3px solid blue;
-  transition: ease 300ms;
-}
-
-.box--container {
-  justify-content: space-around;
-}
-
-.about-me {
-  display: flex;
-  grid-area: about;
-}
-.about-me__picture {
+body .menu {
   display: inline-block;
-  height: 200px;
 }
-
-.footer--basic {
-  grid-template-columns: repeat(3, 1fr);
+body .menu .menu__list {
+  padding-top: 20px;
+  padding-left: 20px;
+  height: auto;
+  width: auto;
+  display: block;
 }
-.footer--basic i {
-  font-size: 1.7rem;
+body .menu .menu__link {
+  border: none;
+}
+body .menu .menu__link span {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 10px;
 }

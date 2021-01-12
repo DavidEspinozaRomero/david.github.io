@@ -1,60 +1,38 @@
-.name__first {
-  font-size: 5rem;
-}
-
-.box--container {
-  width: 90%;
-  justify-content: space-evenly;
-}
-
 .resume {
   display: grid;
   gap: 20px;
-  margin: auto;
-  padding: 0 20px;
-  grid-template-columns: 50% 45%;
-  grid-template-areas: "about about" "studies idioms" "studies hardskills" "hobbies softskills";
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-template-areas: "about about" "hobbies idioms" "hobbies hard";
 }
 
 .about-me {
-  width: auto;
-  display: flex;
-  text-align: center;
   grid-area: about;
 }
-.about-me__description {
-  width: 50%;
-  font-size: 2rem;
-  line-height: 2.5rem;
+.about-me div {
+  margin-left: 20px;
+  padding: 20px 40px;
 }
-.about-me__picture {
-  height: 30vw;
-}
-
-.studies, .softskills, .hardskills, .idioms, .hobbies {
-  grid-area: studies;
-}
-.studies__title, .softskills__title, .hardskills__title, .idioms__title, .hobbies__title {
-  font-size: 2.5rem;
-}
-
-.study, .softskills__content, .hardskills__content, .idioms__content, .hobbies__content {
-  font-size: 1.7rem;
+.about-me__portrait {
+  display: inline-block;
+  margin: 20px;
+  width: 12rem;
+  height: 16rem;
 }
 
 .hobbies {
   grid-area: hobbies;
 }
+
 .idioms {
   grid-area: idioms;
 }
-.hardskills {
-  grid-area: hardskills;
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem 20px;
 }
-.softskills {
-  grid-area: softskills;
-}
-/* --- resume end */
-.footer--basic i {
-  font-size: 1.7rem;
+.projects .projects-container {
+  margin: 0;
+  padding: 0;
 }

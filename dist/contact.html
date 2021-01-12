@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deerhou</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Roboto&amp;family=Roboto+Slab:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/fonts.css"/>
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/mobile.css"/>
+    <link rel="stylesheet" href="./css/contact.css"/>
+  </head>
+  <body>
+    <header class="enterprise"><img class="enterprise__logo" src="./imgs/img.png" alt="logo"/>
+      <h1 class="enterprise__name">Deerhou</h1>
+    </header>
+    <menu class="menu-index">
+        <ul class="menu" id="menu">
+          <li class="menu__list"><a class="menu__link icon-home_work" href="./index.html"><span class="menu-text">Home</span></a></li>
+          <li class="menu__list"><a class="menu__link icon-opsgenie" href="./aboutMe.html"><span class="menu-text">About me</span></a></li>
+          <li class="menu__list"><a class="menu__link icon-folder-open" href="./projects.html"><span class="menu-text">Projects</span></a></li>
+          <li class="menu__list"><a class="menu__link icon-paper-plane" href="./contact.html"><span class="menu__text">Contact</span></a></li>
+        </ul>
+    </menu>
+    <main class="main-contact">
+      <h1 class="main-h1">Es un gusto conocerte!</h1>
+      <form class="contact-form" action="/message" method="post" autocomplete="on">
+        <label for="fullname">*Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Charles Keanu Reeves" autofocus="autofocus"/>
+        <label for="email">*Email</label>
+        <input type="email" id="email" name="email" value="email@gmail.com"/>
+        <label for="comment">Comment</label>
+        <input type="text" id="comment" name="comment"/>
+        <input class="btn-contact" type="button" value="Send"/>
+      </form>
+    </main>
+    <footer class="social-media"><a href="https://www.linkedin.com/in/david-emanuel-espinoza-romero-deerhou/" target="_blank"><i class="icon-linkedin"></i></a><a href="https://github.com/DavidEspinozaRomero" target="_blank"><i class="icon-github"></i></a><a href="https://facebook.com/Davesro" target="_blank"><i class="icon-facebook"></i></a></footer>
+  </body>
+</html>
