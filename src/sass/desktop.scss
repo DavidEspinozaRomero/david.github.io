@@ -1,0 +1,53 @@
+@import '../components/variables';
+@import '../components/mixins';
+
+body{
+  display: grid;
+  background-image: linear-gradient(90deg, $bg-linear-p 23rem, $bg-linear-s 23rem);
+  grid-template-columns: 23rem 1fr;
+  grid-template-areas: 
+  "aside main";
+  header{
+    grid-area: aside;
+    position: absolute;
+  }
+  .menu-index{
+    @extend header;
+    background-color: transparent;
+    border: initial;
+    width: 23rem;
+    top: calc(100vh/4);
+    bottom: 10rem;
+  }
+  .social-media{
+    @extend header;
+    padding: $spacing;
+    bottom: 0;
+  }
+  main{
+    grid-area: main;
+  }
+  .menu{
+    display: inline-block;
+    .menu__list{
+      padding-top: $spacing;
+      padding-left: $spacing;
+      height: auto;
+      width: auto;
+      display: block;
+    }
+    .menu__link{
+      border:none;
+      span{
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: $spacing*.5;
+      }
+    }
+  }
+}
+
+.main-projects{
+	border-left: 1px solid $color-primary;
+}
+

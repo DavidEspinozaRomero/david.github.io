@@ -1,0 +1,69 @@
+@import '../components/variables';
+@import '../components/mixins';
+// @import '../components/tablet/headers';
+// @import '../components/tablet/mains';
+// @import '../components/tablet/footers';
+
+// about START
+
+.resume{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-template-areas: 
+  "about about"
+  "hobbies idioms"
+  "hobbies hard";
+}
+.about-me {
+  grid-area:about;
+
+  div{
+    margin-left: $spacing;
+    padding: $spacing $spacing*2;
+  }
+  &__portrait{
+    display: inline-block;
+    margin: $spacing;
+    width: 12rem;
+    height: 16rem;
+  }
+  // &__name{
+  //   // display: block;
+  // }
+  // &__charge{
+  //   // @extend .about-me__name;
+	// }
+	// &__description{
+  //   // @extend .about-me__name;
+	// }
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+.idioms {
+  grid-area: idioms;
+}
+.hardskills {
+  // grid-area: hardskills;
+}
+// about END
+
+// index/projects --- START
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing;
+    .projects-container{
+      margin: 0;
+      padding: 0;
+    }
+}
+
+.project {
+  margin-bottom: 0;
+}
+// index/projects --- END
+

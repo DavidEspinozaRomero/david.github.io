@@ -1,0 +1,21 @@
+/* ---------------- Footer start */
+.social-media {
+  margin: 0 0 0 $spacing;
+  padding: 0;
+  padding-bottom: 7rem;
+    a {
+      margin-right: $spacing;
+      display: inline;
+      text-decoration: none;
+      i {
+        color: $color-primary;
+        font-size: 4rem;
+        line-height: 30px;
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+
+

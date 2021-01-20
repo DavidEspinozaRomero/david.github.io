@@ -1,0 +1,331 @@
+// --- Index - START
+.index-main-container{
+  margin: $spacing;
+  .index-h2{
+		margin: $spacing 0;
+		font-family: $font-secondary;
+		font-size: 2rem;
+		font-weight:400;
+		a{
+			color: $color-primary;
+      text-decoration: none;
+		}
+  }
+}
+
+
+
+
+// --- Index - End
+
+// --- About main
+
+.about-me {
+	position: relative;
+  &__picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+	}
+  &__portrait{
+		margin: $spacing*.5 calc(50vw - 70px);
+		border-radius: $radius;
+	}
+  &__name{
+		font-size: 2.4rem;
+    font-family: $font-secondary;
+    font-weight: 400;
+	}
+  &__charge{
+    display: block;
+    margin: 0 0 $spacing*.5;
+		font-size: 1.4rem;
+		font-family: $font-secondary;
+		font-weight: 300;
+	}
+	&__description{
+    font-size: 1.6rem;
+    line-height: 1.4em;
+	}
+}
+
+.resume{
+  margin: $spacing;
+}
+.studies {
+	&__title{
+		text-align: center;
+		font-family: $font-secondary;
+		padding: $spacing*.5;
+		font-size: 2rem;
+		// border: 1px solid $color-primary ;
+		// border-radius: $spacing;
+		// box-shadow: 0px 0px 2px 2px $color-primary;
+		// text-shadow: 4px 2px 8px $color-primary;
+	}
+}
+.study{
+  font-size:1.6rem ;
+  line-height: 1.4em;
+}
+.hobbies {
+	@extend .studies;
+	&__title{
+		@extend .studies__title;
+	}
+	&__content {
+		@extend .study;
+	}
+}
+.idioms {
+	@extend .studies;
+	&__title{
+		@extend .studies__title;
+	}
+}
+.idiom{
+	display: inline-block;
+	width: 7rem;
+	height: 7rem;
+	padding: $spacing*.5;
+	text-align: center;
+	justify-content: space-evenly;
+	image-rendering: auto;
+	border-radius: 50%;
+	&__img{
+		width: 100%;
+		border-radius: 50%;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+}
+.hardskills {
+	@extend .studies;
+	&__title{
+		@extend .studies__title;
+	}
+}
+.program {
+	display: inline-block;
+	margin-top: $spacing.5;
+	i {
+		font-size: 6rem;
+		border-radius: 50%;
+		padding: $spacing;
+	}
+}
+
+.softskills {
+	@extend .studies;
+	&__title{
+		@extend .studies__title;
+	}
+	p {
+		padding-left: $spacing;
+		font-size: 1.5rem;
+	}
+}
+.studies {
+	&__title{
+		font-family: $font-secondary;
+		font-size: 2rem;
+		border-radius: $spacing;
+	}
+}	
+.study{
+	font-size:1.6rem;
+}
+.hobbies {
+	@extend .studies;
+	&__title{
+		@extend .studies__title;
+	}
+	&__content {
+		@extend .study;
+	}
+} 
+.idioms {
+	@extend .studies;
+	text-align: center;
+	&__title{
+		@extend .studies__title;
+	}
+}
+.idiom{
+	display: inline-block;	
+	width: 7rem;
+	height: 7rem;
+	padding: $spacing*.5;
+	text-align: center;
+	justify-content: space-evenly;
+	image-rendering: auto;
+	border-radius: 50%;
+	&__img{
+		width: 100%;
+		border-radius: 50%;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+}
+.hardskills {
+	@extend .studies;
+	text-align: center;
+	&__title{
+		@extend .studies__title;
+	}
+}
+.program {
+	display: inline-block;
+	text-align: center;
+	padding: 1.6rem;
+	i {
+		padding: 0;
+		font-size: 5rem;
+		span{
+			display: block;
+			font-size: 1.6rem;
+		}
+	}
+}
+
+
+/* --- about end */
+
+/* --- projects Start */
+
+.main-projects{
+	padding: $spacing;
+	.main-h1{
+		font-size: 2rem;
+		font-weight: 400;
+		font-style: normal;
+		font-family: $font-secondary;
+	}
+}
+.btn-container{
+	.btn__page-link{
+    display: inline-block;
+		box-sizing: border-box;
+		font-family: $font-menu;
+    width: 50%;
+		padding: 5px;
+		border: 1px solid $color-primary;
+		border-radius: $radius*.5 0 0 0;
+    color: $color-primary;
+		font-size: 1.4rem;
+    text-align: center;
+		text-decoration: none;
+		i{
+			margin: 0 $spacing*.5;
+			font-size: 1.4rem;
+		}
+  }
+  .btn__code-link{
+		@extend .btn__page-link;
+		border-radius: 0 $radius*.5 0 0;
+		i{
+			margin-left: $spacing*.5;
+			font-size: 1.4rem;
+		}
+  }
+}
+
+.project:hover .project__img{
+	opacity: 50%;
+	z-index: 2;
+	transition: 600ms ease;
+}
+.project {
+	margin-bottom: $spacing;
+	padding-bottom: 2rem;
+	border: 1px solid $color-primary;
+	border-radius: 0 0 $radius*.5 $radius*.5;
+	background-color: $bg-linear-s;
+	position: relative;
+	display: inline-block;
+	@include project(100%);
+  &__img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		object-fit: cover;
+		border-radius: 0 0 $radius*.5 $radius*.5;
+		z-index: 4;
+	}
+	&__description-title{
+		position: relative;
+		margin: $spacing*.5 0;
+		padding: 0 $spacing*.5;
+		font-family: $font-secondary;
+		font-weight: 400;
+		font-size: 1.8rem;
+		z-index: 3;
+	}
+	&__description-text{
+		position: relative;
+		font-family: $font-content;
+		padding: 0 $spacing*.5;
+		margin: $spacing*.5 0;
+		font-size: 1.6rem;
+		line-height: 1.4em;
+		z-index: 3;
+	}
+	&__tech{
+		position: relative;
+		margin: $spacing*.25;
+		float: right;
+		text-shadow: 2px 2px 2px $bg-linear-p;
+		border-radius: 50%;
+		font-size: 1rem;
+		z-index: 3;
+	}
+}
+
+/* --- Projets end */
+
+/* --- Contact Start */
+
+.main-contact{
+	margin: $spacing;
+}
+
+.contact-form{
+	label{
+		display: block;
+		margin-top: $spacing;
+		font-family: $font-secondary;
+		font-size: 1.6rem;
+	}
+	input{
+		width: calc(100% - 20px);
+		height: 40px;
+		padding-left: $spacing*.5;
+		border: 1px solid black;
+		border-radius: $radius*.5;
+		background-color: $color-primary;
+		font-family: $font-content;
+		font-size: 1.6rem;
+		opacity: 30%;
+	}
+	#comment{
+		height: 80px;
+	}
+	.btn-contact{
+		@extend input;
+		width: 100%;
+		margin-top: $spacing;
+		font-family: $font-menu;
+		font-size: 2.4rem;
+		background-color: $color-hov-act;
+		color: black;
+		opacity: .7;
+	}
+}
+
+
+
+/* --- Contact end */
+

@@ -1,6 +1,6 @@
 body {
   display: grid;
-  background-image: linear-gradient(90deg, black 23rem, blue 23rem, blue);
+  background-image: linear-gradient(90deg, #0A0A6D 23rem, #7625A7 23rem);
   grid-template-columns: 23rem 1fr;
   grid-template-areas: "aside main";
 }
@@ -39,4 +39,8 @@ body .menu .menu__link span {
   display: inline-block;
   font-size: 2rem;
   margin-left: 10px;
+}
+
+.main-projects {
+  border-left: 1px solid #C8C4C4;
 }

@@ -1,0 +1,26 @@
+extend ./components/template.pug
+
+block head-test
+	link(rel="stylesheet" href="./css/projects.css")
+
+block content
+	main.main-projects
+		h1.main-h1 Proyectos
+		section.projects
+			+project("https://i.imgur.com/hVid1Ob.png",
+			'davidespinozaromero.github.io/MachineLearningGestionDataCenters/',
+			'github.com/DavidEspinozaRomero/MachineLearningGestionDataCenters',
+			{primary: 'html5', secondary:'css3' , tertiary: 'javascript'},
+			{title:'ML Data Centers', description:'Ayudar a la empresa y al personal de mantenimiento de Data Centers. Por medio de los medidores que pasan la informacion a la "IA de mantenimiento", que monitorea y antisipa fallos, avisando al area de mantenimiento del lugar indicado a revizar y dar el respectivo mantenimiento.'})
+
+			+project("https://i.imgur.com/IFbryh6.png",
+			'davidespinozaromero.github.io/GalleriaTipoInstagram/index.html',
+			'github.com/DavidEspinozaRomero/GalleriaTipoInstagram',
+			{primary: 'html5', secondary:'css3'},
+			{title:'Galleria de fotos tipo Instagram', description:'Creacion de una galleria de fotos similar a instagram como practica.'})
+
+			+project("https://i.imgur.com/1NaWnFn.png",
+			'davidespinozaromero.github.io/DeerhouSays/',
+			'github.com/DavidEspinozaRomero/DeerhouSays',
+			{primary: 'html5', secondary:'css3' , tertiary: 'javascript'},
+			{title:'SimonSays', description:"Simon dice el juego de memoria repitiendo lo que hace simon"})

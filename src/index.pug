@@ -1,0 +1,28 @@
+extend ./components/template.pug
+
+block head-test
+	link(rel="stylesheet" href="./css/index.css")
+
+block content
+	main.index-main-container
+		section.about-me
+			img.about-me__picture(src="imgs/img.png" alt="foto personal")
+			h2.about-me__name David Espinoza Romero
+			h1.about-me__charge FRONTEND WEB DEVELOPER
+			p.about-me__description
+				|Se puede aprender cualquier tema que se desee con esfuerzo y perseverancia.
+				| gracias a la gente que comparte sus conocimientos por medio de internet.
+				|Soy autodidacta, proactivo y creativo.
+				|Me gusta trabajar en equipo,
+				|aprender nuevas tecnologías e investigar.
+
+		h2.index-h2: a(href="./projects.html") Projects
+		section.projects
+			+project("./imgs/img.png", 'page.com', 'code.com',	{primary: 'html5', secondary:'css3' , tertiary: 'git'}, {title:'titulo', description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At facere quaerat recusandae inventore accusamus, maiores temporibus quae suscipit optio! Quis doloribus explicabo amet? Saepe nisi pariatur veritatis quidem excepturi architecto?"})
+
+			+project("./imgs/img.png", 'page.com', 'code.com',	{primary: 'html5', secondary:'css3' , tertiary: 'git'}, {title:'titulo', description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At facere quaerat recusandae inventore accusamus, maiores temporibus quae suscipit optio! Quis doloribus explicabo amet? Saepe nisi pariatur veritatis quidem excepturi architecto?"})
+
+			+project("./imgs/img.png", 'page.com', 'code.com',	{primary: 'html5', secondary:'css3' , tertiary: 'git'}, {title:'titulo', description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At facere quaerat recusandae inventore accusamus, maiores temporibus quae suscipit optio! Quis doloribus explicabo amet? Saepe nisi pariatur veritatis quidem excepturi architecto?"})
+
+			+project("./imgs/img.png", 'page.com', 'code.com',	{primary: 'html5', secondary:'css3' , tertiary: 'git'}, {title:'titulo', description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At facere quaerat recusandae inventore accusamus, maiores temporibus quae suscipit optio! Quis doloribus explicabo amet? Saepe nisi pariatur veritatis quidem excepturi architecto?"})
+

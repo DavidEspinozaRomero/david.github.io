@@ -1,0 +1,73 @@
+extend ./components/template.pug
+block head-test
+	link(rel="stylesheet" href="./css/about.css")
+	link(rel="stylesheet" href="./css/tablet-about.css" media="screen and (min-width: 600px)")
+
+block content
+	main.resume
+		section.about-me
+			img.about-me__portrait(src="https://i.imgur.com/RBQd4GT.jpg" alt="foto personal")
+			div
+				h2.about-me__name David Espinoza Romero
+				h1.about-me__charge FRONTEND WEB DEVELOPER
+				p.about-me__description
+					|Se puede aprender cualquier tema que se desee con esfuerzo y perseverancia.
+					wbr
+					|Gracias a la gente que comparte sus conocimientos por medio de internet.
+					wbr
+					|Soy autodidacta, proactivo y creativo.
+					|Me gusta trabajar en equipo,
+					|aprender nuevas tecnologías e investigar.
+
+		section.hobbies
+			h2.hobbies__title Intereses
+			p.hobbies__content
+				| Siempre me ha interesado el saber como funcionan las cosas y el porque de las mismas.
+				br
+			p.hobbies__content
+				| Los avances de tecnología siempre me han imprecionado, cuando era joven no sabia como se conseguia o a subes pensaba que no era la gran cosa, ahora se que el trabajo en equipo marca la diferencia.
+				br
+			p.hobbies__content
+				| Uno de mis hobbies es la apicultura me encanta ya que no es necesario invertir mucho tiempo y es gratificante el trabajan con las abejas.
+				br
+			p.hobbies__content
+				| La programación me llamo la atencion desde que mi hermano mayor empezo a aprender en su instituto, al pasar un par de años cuando me enseñaron vi que se me daba bien a diferencia de mis compañeros de instituto aun que tiene su complejidad te habre la mente en varios sentidos.
+				br
+			p.hobbies__content
+				| Agradezco a los videojuegos varias cosas entre las mas importantes el a ver apredido ingles basico y al salir el modo multiplayer online conocer gente de todo el mundo y ampliar mi vision.
+				br
+				br
+			p.hobbies__content
+				strong Proyecto Personal:
+				i “Bee’s Touch” 
+				|Empresa fomentada a la venta de productos de las colmenas de abejas y a realizar conciencia social sobre la importancia de las mismas.
+
+		section.idioms
+			h1.idioms__title Idiomas
+			+idiom("English","./assets/icons/usa.svg")
+			+idiom("Español","./assets/icons/ecuador.svg")
+
+		section.hardskills
+			h2.hardskills__title Conocimientos
+			+program("Html5","html5")
+			+program("Css3",'css3')
+			+program("Javascript",'javascript')
+			//- +program("Pug", 'Pug')
+			+program("Sass", 'sass')
+			+program('Git',"git")
+			+program('Nodejs',"node-dot-js")
+			+program('mongoDB', "mongodb")
+			+program('Webpack', "webpack")
+			+program('Wordpress' ,"wordpress")
+
+		section.hardskills
+			h2.hardskills__title Programas
+			+program("VisualStudioCode", 'visualstudiocode')
+			+program('AdobeXD',"adobexd")
+			+program('Figma',"figma")
+			+program('Github',"github")
+			+program('Terminal',"console")
+			+program('Postman',"postman")
+
+
+

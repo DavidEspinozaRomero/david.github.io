@@ -1,0 +1,47 @@
+mixin menu(index,aboutMe, projects, contact)
+	ul#menu.menu
+		li.menu__list: a(class='menu__link icon-home_work' href=`./${index}.html`): span.menu-text=menuText[0]
+		li.menu__list: a(class='menu__link icon-opsgenie' href=`./${aboutMe}.html`): span.menu-text=menuText[1]
+		li.menu__list: a(class='menu__link icon-folder-open' href=`./${projects}.html`): span.menu-text=menuText[2]
+		li(class='menu__list'): a(class='menu__link icon-paper-plane' href=`./${contact}.html`): span.menu__text=menuText[3]
+
+mixin project(img, page, code, tech, info)
+	.project-container
+		div.btn-container
+			a.btn__page-link(href=`{page}`, target="_blank", rel="noopener noreferrer")
+				i.icon-launch
+				|PAGE
+
+			a.btn__code-link(class='' href=`http://${code}`, target="_blank", rel="noopener noreferrer") CODE
+				i.icon-file-code-o
+		div.project
+			img.project__img(src=`${img}`)(alt=`${img}`)
+			h2.project__description-title=info.title
+			p.project__description-text=info.description
+			p
+				i(class=`project__tech icon-${tech.primary}`)
+				i(class=`project__tech icon-${tech.secondary}`, alt="icon")
+				i(class=`project__tech icon-${tech.tertiary}`, alt="icon")
+
+			//- img(class="project__tech" src="./imgs/img.png", alt="icon")img(class="project__tech" src="./imgs/img.png", alt="icon")
+
+mixin studies(date, degree, institute, place)
+	div.study
+		small.study__date=date
+		br
+		span.study__degree=degree
+		br
+		strong.study__institute=institute
+		br
+		small.study__place=place
+		hr
+
+mixin idiom(idioma,img)
+	div.idiom
+		img.idiom__img(src=`${img}`, alt=`"idioma"${idioma}`)
+		p=idioma
+
+mixin program(name, nameIcon)
+	p.program: i(class=`icon-${nameIcon}`)
+		span=name
+
