@@ -114,6 +114,7 @@
 		font-size: 6rem;
 		border-radius: 50%;
 		padding: $spacing;
+		text-shadow: 2px 2px 2px $color-secondary
 	}
 }
 
@@ -241,9 +242,10 @@
 .project {
 	margin-bottom: $spacing;
 	padding-bottom: 2rem;
+	box-sizing: border-box;
+	background-color: $color-secondary;
 	border: 1px solid $color-primary;
 	border-radius: 0 0 $radius*.5 $radius*.5;
-	background-color: $bg-linear-s;
 	position: relative;
 	display: inline-block;
 	@include project(100%);
@@ -277,7 +279,7 @@
 		position: relative;
 		margin: $spacing*.25;
 		float: right;
-		text-shadow: 2px 2px 2px $bg-linear-p;
+		text-shadow: 2px 2px 2px $color-secondary;
 		border-radius: 50%;
 		font-size: 1rem;
 		z-index: 3;

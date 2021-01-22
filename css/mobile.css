@@ -11,7 +11,7 @@ body {
   height: calc(100vh - 7rem);
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(#0A0A6D, #7625A7);
+  background: linear-gradient(#131397, #134b97);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #C8C4C4;
@@ -47,7 +47,7 @@ img {
   left: 0;
   padding: 0;
   margin: 0;
-  background-color: #0A0A6D;
+  background-color: #1e1e1e;
   border-top: 1px solid #C8C4C4;
   box-sizing: border-box;
   z-index: 9;
@@ -264,13 +264,14 @@ img {
 .project {
   margin-bottom: 20px;
   padding-bottom: 2rem;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
   border: 1px solid #C8C4C4;
   border-radius: 0 0 10px 10px;
-  background-color: #7625A7;
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 80%;
+  height: 85%;
 }
 .project__img {
   width: 100%;
@@ -302,7 +303,7 @@ img {
   position: relative;
   margin: 5px;
   float: right;
-  text-shadow: 2px 2px 2px #0A0A6D;
+  text-shadow: 2px 2px 2px #1e1e1e;
   border-radius: 50%;
   font-size: 1rem;
   z-index: 3;
