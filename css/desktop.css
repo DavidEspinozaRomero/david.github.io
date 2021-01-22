@@ -1,6 +1,6 @@
 body {
   display: grid;
-  background-image: linear-gradient(90deg, #1e1e1e 23rem, #131397 23rem, #134b97);
+  background-image: linear-gradient(90deg, #1e1e1e 23rem, #C8C4C4 23.1rem, #131397 23.1rem, #134b97);
   grid-template-columns: 23rem 1fr;
   gap: 20px;
   grid-template-areas: "aside main";
@@ -40,8 +40,4 @@ body .menu .menu__link span {
   display: inline-block;
   font-size: 2rem;
   margin-left: 10px;
-}
-
-.main-projects {
-  border-left: 1px solid #C8C4C4;
 }
