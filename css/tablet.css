@@ -2,29 +2,24 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, calc(50% - 10px));
-  grid-template-areas: "about about" "hobbies idioms" "hobbies hard";
+  grid-template-areas: "about about" "hobbies idioms" "hobbies hard" "hobbies hard";
 }
 
 .about-me {
   grid-area: about;
 }
 .about-me div {
-  margin-left: 20px;
-  padding: 20px 40px;
+  padding: 20px;
 }
 .about-me__portrait {
   display: inline-block;
   margin: 20px;
-  width: 12rem;
-  height: 16rem;
+  height: 20rem;
+  width: 15rem;
 }
 
 .hobbies {
   grid-area: hobbies;
-}
-
-.idioms {
-  grid-area: idioms;
 }
 
 .projects {

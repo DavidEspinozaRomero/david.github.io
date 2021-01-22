@@ -2,6 +2,7 @@ body {
   display: grid;
   background-image: linear-gradient(90deg, #1e1e1e 23rem, #131397 23rem, #134b97);
   grid-template-columns: 23rem 1fr;
+  gap: 20px;
   grid-template-areas: "aside main";
 }
 body header, body .social-media, body .menu-index {

@@ -20,123 +20,24 @@
 
 // --- About main
 
-.about-me {
-	position: relative;
-  &__picture{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 30%;
-	}
-  &__portrait{
-		margin: $spacing*.5 calc(50vw - 70px);
-		border-radius: $radius;
-	}
-  &__name{
-		font-size: 2.4rem;
-    font-family: $font-secondary;
-    font-weight: 400;
-	}
-  &__charge{
-    display: block;
-    margin: 0 0 $spacing*.5;
-		font-size: 1.4rem;
-		font-family: $font-secondary;
-		font-weight: 300;
-	}
-	&__description{
-    font-size: 1.6rem;
-    line-height: 1.4em;
-	}
-}
 
-.resume{
-  margin: $spacing;
-}
 .studies {
-	&__title{
-		text-align: center;
-		font-family: $font-secondary;
-		padding: $spacing*.5;
-		font-size: 2rem;
-		// border: 1px solid $color-primary ;
+  &__title{
+    // border: 1px solid $color-primary ;
 		// border-radius: $spacing;
 		// box-shadow: 0px 0px 2px 2px $color-primary;
 		// text-shadow: 4px 2px 8px $color-primary;
-	}
-}
-.study{
-  font-size:1.6rem ;
-  line-height: 1.4em;
-}
-.hobbies {
-	@extend .studies;
-	&__title{
-		@extend .studies__title;
-	}
-	&__content {
-		@extend .study;
-	}
-}
-.idioms {
-	@extend .studies;
-	&__title{
-		@extend .studies__title;
-	}
-}
-.idiom{
-	display: inline-block;
-	width: 7rem;
-	height: 7rem;
-	padding: $spacing*.5;
-	text-align: center;
-	justify-content: space-evenly;
-	image-rendering: auto;
-	border-radius: 50%;
-	&__img{
-		width: 100%;
-		border-radius: 50%;
-	}
-	p {
-		font-size: 1.6rem;
-	}
-}
-.hardskills {
-	@extend .studies;
-	&__title{
-		@extend .studies__title;
-	}
-}
-.program {
-	display: inline-block;
-	margin-top: $spacing.5;
-	i {
-		font-size: 6rem;
-		border-radius: 50%;
-		padding: $spacing;
-		text-shadow: 2px 2px 2px $color-secondary
-	}
-}
 
-.softskills {
-	@extend .studies;
-	&__title{
-		@extend .studies__title;
-	}
-	p {
-		padding-left: $spacing;
-		font-size: 1.5rem;
-	}
-}
-.studies {
-	&__title{
-		font-family: $font-secondary;
+    padding: $spacing*.5;
+    font-family: $font-secondary;
+    text-align: center;
 		font-size: 2rem;
 		border-radius: $spacing;
 	}
 }	
 .study{
 	font-size:1.6rem;
+  line-height: 1.4em;
 }
 .hobbies {
 	@extend .studies;
@@ -154,10 +55,10 @@
 		@extend .studies__title;
 	}
 }
+
 .idiom{
 	display: inline-block;	
-	width: 7rem;
-	height: 7rem;
+	width: 5rem;
 	padding: $spacing*.5;
 	text-align: center;
 	justify-content: space-evenly;
@@ -168,9 +69,10 @@
 		border-radius: 50%;
 	}
 	p {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 }
+
 .hardskills {
 	@extend .studies;
 	text-align: center;
@@ -178,16 +80,19 @@
 		@extend .studies__title;
 	}
 }
+
 .program {
+	margin-top: $spacing*.5;
+	padding: 1.6rem;
 	display: inline-block;
 	text-align: center;
-	padding: 1.6rem;
 	i {
 		padding: 0;
-		font-size: 5rem;
+		font-size: 3rem;
+		text-shadow: 2px 2px 2px $color-secondary;
 		span{
 			display: block;
-			font-size: 1.6rem;
+			font-size: 1.4rem;
 		}
 	}
 }

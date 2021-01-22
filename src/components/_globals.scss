@@ -8,16 +8,10 @@ html{
 }
 
 body {
-  height: calc(100vh - 7rem);
   box-sizing: border-box;
   font-family: $font-content;
   background: linear-gradient($bg-linear-p, $bg-linear-s);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: $color-primary;
-}
-
-img {
-  width: 100px;
-  height: 100px;
 }

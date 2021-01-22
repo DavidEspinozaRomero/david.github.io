@@ -6,4 +6,39 @@
 @import '../components/mains';
 @import '../components/footers';
 
-
+.resume {
+  width: 100vw;
+	padding: 0 $spacing;
+	box-sizing: border-box;
+}
+.about-me {
+	position: relative;
+  width: auto;
+  &__picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+	}
+  &__portrait{
+		width: 70%;
+    margin: 10px calc(50vw - 130px);
+    border-radius: $radius;
+	}
+  &__name{
+		font-size: 2.4rem;
+    font-family: $font-secondary;
+    font-weight: 400;
+	}
+  &__charge{
+    display: block;
+    margin: 0 0 $spacing*.5;
+		font-size: 1.4rem;
+		font-family: $font-secondary;
+		font-weight: 300;
+	}
+	&__description{
+    font-size: 1.6rem;
+    line-height: 1.4em;
+	}
+}
